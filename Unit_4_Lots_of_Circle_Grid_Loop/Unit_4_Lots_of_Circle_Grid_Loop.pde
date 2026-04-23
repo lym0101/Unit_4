@@ -3,21 +3,15 @@
 //Apr 22, 2026
 
 int offset = 0;
-float radius
+float radius;
 
 void setup() {
-  stroke(#daad0f);
-  strokeWeight(1);
-  size(800, 800);
-  background(#9e151a);
-  noFill();
-  rectMode(CENTER);
-  for (int a = 0; a <= height; a += 80) {
-    for (int b = 0; b <= width; b += 80) {
+  size(800,800);
+  background(255);
+  for (int a = 40; a <= 825; a += 80) {
+    for (int b = 40; b <= 825; b += 80) {
       drawRings(a,b,80);
     }
-    if (offset == 0) offset = 80;
-    else offset = 0;
   }
 }
 
@@ -28,6 +22,7 @@ void drawRings(int x, int y, int r) {
   circle(x,y,r);
   circle(x,y,r-spacing);
   circle(x,y,r-spacing*2);
+  circle(x, y, r - spacing*3);
 }
   
   
