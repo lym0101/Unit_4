@@ -20,7 +20,7 @@ void setup() {
 
 void drawRings(int x, int y, int r) {
   float spacing;
-  spacing = r/5;
+  spacing = r/4.5;
   
   strokeWeight(3);
   circle(x,y,r);
